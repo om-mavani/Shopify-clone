@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: white;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+}
+.flex-warp{
+    flex-wrap: wrap;
+}
+.flex-colum{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-space{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.main{
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    margin-right: 0.5rem;
+    background-color:#000;
+    max-width: 340px;
+    width: 100%;
+    border-radius: 1rem;
+}
+.main-content{
+    background-color:#121212;
+    flex: 1;
+    border-radius: 1rem;
+    padding: 0 1.5rem;
+    overflow: auto;
+}
+.music-player{
+   background-color: black;
+   max-width: 100%;
+   width: 100%;
+   min-height: 72px;
+   position: fixed;
+   bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    min-height: 100px;
+    padding: 0.5rem .75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: .5rem .75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+}
+
+.libray{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: .5rem .75rem;
+}
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons i{
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    height: 8rem;
+    background-color: #232323;
+    margin:0.75rem 0 1.75rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem 0;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+    padding: .5rem 0;
+}
+.btn-li{
+ background-color: white;
+ border: none;
+ border-radius: 100px;
+ padding: 0.25rem 1rem;
+ font-weight: 700;
+ margin-top: 0.5rem;
+ height: 2rem;
+ width: fit-content;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #121212;
+    padding: 1rem 0 1rem;
+
+}
+.nav-icons{
+    margin-left: 0.75rem;
+}
+.nav-item{
+    margin-left:1rem;
+}
+.dark{
+    background-color: #000;
+    color: white;
+}
+.card{
+    background-color: #232323;
+    max-width: 155px;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-titel{
+    font-weight: 600;
+    padding-top: 1rem;
+
+}
+.card-info{
+    font-size: 0.6rem;
+    opacity: 0.5;
+    padding-top: 1rem;
+}
+.card-container{
+
+}
+.footer{
+    height: 200px;
+}
+.line{
+    width: 90%;
+    height: 40%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+
+}
+
+.album{
+    max-width: 25%;
+    width: 100%;
+}
+.volum{
+    max-width: 25%;
+    width: 100%;
+}
+.player{
+    max-width: 50%;
+    width: 100%;
+}
+.palyer-con img{
+    width: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.palyer-con img:hover{
+    opacity: 1;
+}
+.play-back input{
+    width: 50%;
+    padding: 0 5px;
+}
+.play-back input{
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.play-back input::-webkit-slider-runnable-track{
+    border-radius: 100px;
+    background-color: #ddd;
+    height:0.2rem;
+}
+.play-back input::-webkit-slider-thumb{
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    appearance: none;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+@media (max-width:1000px) {
+    .sticky-nav .hide{
+        display: none;
+    }
+}
